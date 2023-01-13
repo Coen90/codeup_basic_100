@@ -1,19 +1,13 @@
 import java.io.*;
 
-public class Codeup1067 {
+public class Codeup1082 {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    int num = Integer.parseInt(br.readLine());
-    if (num < 0) {
-      bw.append("minus\n");
-    } else {
-      bw.append("plus\n");
-    }
-    if (num % 2 == 0) {
-      bw.append("even\n");
-    } else {
-      bw.append("odd\n");
+    int num = Integer.parseInt(br.readLine(), 16);
+    for (int i = 1; i < 16; i++) {
+      bw.append(Integer.toHexString(num).toUpperCase() + "*" + Integer.toHexString(i).toUpperCase() + "="
+          + Integer.toHexString(num * i).toUpperCase() + "\n");
     }
     bw.flush();
     br.close();
