@@ -13,17 +13,16 @@ public class Codeup1085 {
     final long BIT = 8;
     final long BYTE = 1024;
     final float KILO_BYTE = 1024.0f;
-    
+
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     String[] arr = br.readLine().split(" ");
     long tmp = 1L;
-    for(String s: arr) {
-        tmp *= Long.parseLong(s);
+    for (String s : arr) {
+      tmp *= Long.parseLong(s);
     }
-    long result = tmp / BIT / BYTE;
-    float num = float.
-    result / KILO_BYTE;
+    long longVal = tmp / BIT / BYTE;
+    float result = longVal / KILO_BYTE;
     System.out.printf("%.1f MB", result);
     bw.flush();
     br.close();
