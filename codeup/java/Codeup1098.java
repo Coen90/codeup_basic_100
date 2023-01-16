@@ -1,5 +1,3 @@
-package coding.test.codeup;
-
 import java.io.*;
 
 public class Codeup1098 {

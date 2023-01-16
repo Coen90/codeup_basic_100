@@ -1,5 +1,3 @@
-package coding.test.codeup;
-
 import java.io.*;
 
 public class Codeup1097 {
@@ -14,12 +12,12 @@ public class Codeup1097 {
                 go[i][j] = Integer.parseInt(arr[j]);
             }
         }
-//        for(int i = 0; i < go.length; i++) {
-//            for (int j = 0; j < go[i].length; j++) {
-//                System.out.print(go[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
+        // for(int i = 0; i < go.length; i++) {
+        // for (int j = 0; j < go[i].length; j++) {
+        // System.out.print(go[i][j] + " ");
+        // }
+        // System.out.println();
+        // }
         int cnt = Integer.parseInt(br.readLine());
         for (int i = 0; i < cnt; i++) {
             String[] arr = br.readLine().split(" ");
@@ -28,7 +26,7 @@ public class Codeup1097 {
             go = crossUpDown(go, x, y);
         }
 
-        for(int i = 0; i < go.length; i++) {
+        for (int i = 0; i < go.length; i++) {
             for (int j = 0; j < go[i].length; j++) {
                 System.out.print(go[i][j] + " ");
             }
@@ -40,15 +38,15 @@ public class Codeup1097 {
         int[][] goClone = go;
         for (int i = 0; i < goClone.length; i++) {
             for (int j = 0; j < goClone[i].length; j++) {
-                if(i == x || j == y) {
-                    if(goClone[i][j] == 0) {
+                if (i == x || j == y) {
+                    if (goClone[i][j] == 0) {
                         goClone[i][j] = 1;
                     } else {
                         goClone[i][j] = 0;
                     }
                 }
-                if(i == x && j == y) {
-                    if(goClone[i][j] == 0) {
+                if (i == x && j == y) {
+                    if (goClone[i][j] == 0) {
                         goClone[i][j] = 1;
                     } else {
                         goClone[i][j] = 0;
