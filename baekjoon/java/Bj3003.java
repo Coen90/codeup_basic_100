@@ -1,5 +1,3 @@
-package baekjoon.java;
-
 import java.io.*;
 
 public class Bj3003 {
