@@ -22,7 +22,6 @@ public class Bj2839 {
     } else if (weight % SM == 0) {
       result = weight / SM;
     }
-    // 9
     for (int i = weight / LG; i >= 0; i--) { // 1 0
       if ((weight - (LG * i)) % SM == 0) {
         int tmp = ((weight - (LG * i)) / SM) + i;
