@@ -11,13 +11,6 @@ public class Bj16953 {
         int start = Integer.parseInt(st.nextToken());
         String end = st.nextToken();
         int cnt = 1;
-        if (start > Integer.parseInt(end)) {
-            System.out.println(-1);
-            return;
-        } else if (start == Integer.parseInt(end)) {
-            System.out.println(cnt);
-            return;
-        }
         while (true) {
             int tmp = 0;
             if ("1".equals(end.substring(end.length() - 1))) {
@@ -35,14 +28,13 @@ public class Bj16953 {
                     cnt++;
                 }
             }
+            if (tmp == start) {
+                break;
+            }
             if (tmp < start || tmp == 1) {
                 cnt = -1;
                 break;
             }
-            if (tmp == start) {
-                break;
-            }
-
         }
         System.out.println(cnt);
         br.close();
