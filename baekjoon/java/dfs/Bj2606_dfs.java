@@ -3,7 +3,7 @@ package dfs;
 import java.io.*;
 import java.util.*;
 
-public class Bj2606 {
+public class Bj2606_dfs {
 
   static int count;
   static int node;
