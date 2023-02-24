@@ -96,6 +96,8 @@ for (String s : arr) { // 배열이 비어있어 foreach 타지 않음
 }
 ```
 
+<br/>
+
 ```java
 String str = "a.b.c.d";
 String[] arr = str.split("\\."); // \을 붙여 정규식 escape 처리를 하고, java 문자열에서도 \로 escape 처리
