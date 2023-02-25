@@ -67,6 +67,7 @@ System.out.printf("%.2f", d); // prinf 사용 1.55
 
 보통 입력된 자료들을 나눌때
 
+
 ```java
 String str = "a b c d";
 String[] arr1 = str.split(" ");
